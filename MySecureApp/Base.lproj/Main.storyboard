@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MySecureApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="w0a-Il-pU7">
+                                <rect key="frame" x="37.5" y="28" width="300" height="610"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kHB-Gn-sKl">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKc-15-LRX">
+                                        <rect key="frame" x="0.0" y="50" width="300" height="30"/>
+                                        <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <action selector="submitButtonProssed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8rc-ui-F3d"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cxa-hh-PeR">
+                                        <rect key="frame" x="0.0" y="100" width="300" height="30"/>
+                                        <state key="normal" title="API Test"/>
+                                        <connections>
+                                            <action selector="apiTestButtonProssed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oqA-ej-sk7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhv-OK-Yey">
+                                        <rect key="frame" x="0.0" y="150" width="300" height="30"/>
+                                        <state key="normal" title="SSL Pinning Test"/>
+                                        <connections>
+                                            <action selector="sslPinningTestButtonProssed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yz8-IS-jnu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1P-DA-rpq">
+                                        <rect key="frame" x="0.0" y="200" width="300" height="30"/>
+                                        <state key="normal" title="Save to Keychain"/>
+                                        <connections>
+                                            <action selector="saveToKeychainButtonProssed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ru5-yl-Em3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3v-V1-gnF">
+                                        <rect key="frame" x="0.0" y="250" width="300" height="30"/>
+                                        <state key="normal" title="Load from Keychain"/>
+                                        <connections>
+                                            <action selector="loadFromKeychainButtonProssed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wpb-Ok-AEv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKh-Tg-YW3">
+                                        <rect key="frame" x="0.0" y="300" width="300" height="30"/>
+                                        <state key="normal" title="Remove from Keychain"/>
+                                        <connections>
+                                            <action selector="removeFromKeychainButtonProssed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SMa-M2-5UT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHt-ws-1wC">
+                                        <rect key="frame" x="0.0" y="350" width="300" height="30"/>
+                                        <state key="normal" title="Encrypt File"/>
+                                        <connections>
+                                            <action selector="encryptFileBUttonProssed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qsm-nv-Mhf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIG-TK-ggb">
+                                        <rect key="frame" x="0.0" y="400" width="300" height="30"/>
+                                        <state key="normal" title="Decrypt File"/>
+                                        <connections>
+                                            <action selector="decryptFileBUttonProssed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mW7-OH-I4C"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NFb-6D-xX5">
+                                        <rect key="frame" x="0.0" y="450" width="300" height="160"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="NFb-6D-xX5" secondAttribute="height" multiplier="15:8" id="Vg3-Vi-SZs"/>
+                                            <constraint firstAttribute="width" constant="300" id="aCe-i9-Qnc"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w0a-Il-pU7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gNA-8f-gkl"/>
+                            <constraint firstItem="w0a-Il-pU7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zdo-R3-2iP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextfield" destination="kHB-Gn-sKl" id="hT7-tj-vgh"/>
+                        <outlet property="resultImageVIew" destination="NFb-6D-xX5" id="Wx5-Tf-jBR"/>
+                        <outlet property="submitButton" destination="bKc-15-LRX" id="Rme-CJ-UYt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
